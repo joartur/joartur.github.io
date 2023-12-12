@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Mesa - SiGerPe</title>
+    <style>
+        /* static/styles.css */
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e74c3c;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #c0392b;
+        }    
+    </style>
+</head>
+<body>
+    <div align="center"><h1>Cadastrar Mesa</h1></div>
+    <form action="/cadastrar-mesa" method="post">
+        <label for="qtdMesa">Capacidade de Pessoas:</label>
+        <input type="number" id="qtdMesa" name="qtdMesa" required>
+
+        <label for="idGarcom">ID do Garçom:</label>
+        <input type="number" id="idGarcom" name="idGarcom" required>
+
+        <button type="submit">Cadastrar Mesa</button>
+        <a href="/" class="back-button">Voltar</a>
+    </form>
+</body>
+</html>
