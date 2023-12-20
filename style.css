@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e2640; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#header {
+    background-image: url('capa.png');
+    background-size: cover;
+    height: 175px;
+    width: 100%;
+    position: relative;
+}
+html {
+scroll-behavior: smooth;
+}
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #7289DA; 
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-image: url('avatar.png');
+    background-size: cover;
+}
+
+#social-icons {
+    margin-top: 20px;
+}
+
+#social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s; 
+}
+
+#social-icons a:hover {
+    transform: scale(2.2); 
+}
+
+#username {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+#subtext {
+    font-size: 18px;
+    color: #fff;
+}
+
+#portfolio-button,
+#projects-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; 
+    height: 40px; 
+    background-color: #dcdcdc; 
+    color: #1e2640; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0; 
+    border-radius: 25px; 
+    border: 2px solid #1e2640; 
+    transition: background-color 0.3s, border-color 0.3s; 
+}
+
+#portfolio-button:hover,
+#projects-button:hover {
+    background-color: #333; 
+    border-color: #7289DA; 
+    color: #fff; 
+}
+#menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(30, 38, 64, 0.8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.neon-button {
+color: #fff;
+text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+transition: text-shadow 0.3s;
+}
+
+.neon-button:hover {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+.selected-button {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.not-selected-button {
+    color: #fff;
+}
+
+
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #fff;
+    padding: 20px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
